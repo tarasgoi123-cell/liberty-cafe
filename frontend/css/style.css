@@ -70,9 +70,8 @@ input,textarea,select,button{font:inherit}
 .hero__stars{color:#fbbf24;font-size:1rem;letter-spacing:2px}
 .hero__rating-txt{font-size:.78rem;color:rgba(255,255,255,.8);font-weight:500}
 .hero__btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
-.hero__scroll{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);z-index:3;display:flex;align-items:center;justify-content:center}
-.hero__scroll-chevron{color:rgba(200,169,126,.5);animation:chevronBounce 2.2s ease-in-out infinite;filter:drop-shadow(0 0 8px rgba(200,169,126,.25))}
-@keyframes chevronBounce{0%,100%{transform:translateY(0);opacity:.5}50%{transform:translateY(6px);opacity:1}}
+.hero__scroll{display:none}
+.hero__scroll-chevron{display:none}
 
 /* ── Trust bar ─────────────────────────── */
 .trust-bar{background:var(--dark);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:0;overflow:hidden}

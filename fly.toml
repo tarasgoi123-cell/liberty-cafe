@@ -1,0 +1,26 @@
+app = "liberty-cafe-lviv"
+primary_region = "waw"  # Warsaw - closest to Ukraine
+
+[build]
+  dockerfile = "Dockerfile"
+
+[env]
+  NODE_ENV = "production"
+  PORT = "8080"
+  DB_PATH = "/data/liberty.sqlite"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+
+[[mounts]]
+  source = "liberty_data"
+  destination = "/data"
+
+[[vm]]
+  memory = "512mb"
+  cpu_kind = "shared"
+  cpus = 1

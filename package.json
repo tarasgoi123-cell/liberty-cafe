@@ -1,11 +1,11 @@
 {
   "name": "liberty-cafe",
   "version": "1.0.0",
-  "description": "Liberty Café — повний стек сайту для кав'ярні",
+  "description": "Liberty Café — Lviv coffee shop website",
   "main": "backend/server.js",
   "scripts": {
     "start": "node backend/server.js",
-    "dev": "node backend/server.js"
+    "build": "echo 'No build step needed'"
   },
   "engines": {
     "node": ">=18.0.0"

@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: liberty-cafe
+    runtime: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install
+    startCommand: node backend/server.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DB_PATH
+        value: /tmp/liberty.sqlite
+      - key: JWT_SECRET
+        value: liberty_cafe_secure_2024
